@@ -1,0 +1,1947 @@
+[
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=453, protocol=UDP, login_attempts=5, session_duration=380.5, encryption=AES, ip_reputation_score=0.422, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=815, protocol=ICMP, login_attempts=4, session_duration=728.1, encryption=AES, ip_reputation_score=0.414, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=406, protocol=TCP, login_attempts=2, session_duration=542.6, encryption=nan, ip_reputation_score=0.295, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=548, protocol=TCP, login_attempts=2, session_duration=186.1, encryption=nan, ip_reputation_score=0.407, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=564, protocol=TCP, login_attempts=2, session_duration=457.5, encryption=nan, ip_reputation_score=0.220, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=622, protocol=TCP, login_attempts=6, session_duration=106.9, encryption=nan, ip_reputation_score=0.330, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=580, protocol=ICMP, login_attempts=3, session_duration=733.6, encryption=DES, ip_reputation_score=0.242, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=266, protocol=TCP, login_attempts=5, session_duration=265.8, encryption=nan, ip_reputation_score=0.311, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=761, protocol=ICMP, login_attempts=1, session_duration=959.6, encryption=AES, ip_reputation_score=0.178, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=568, protocol=ICMP, login_attempts=5, session_duration=1053.3, encryption=DES, ip_reputation_score=0.189, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=447, protocol=UDP, login_attempts=3, session_duration=257.4, encryption=AES, ip_reputation_score=0.068, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=542, protocol=UDP, login_attempts=5, session_duration=16.1, encryption=AES, ip_reputation_score=0.311, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=630, protocol=ICMP, login_attempts=3, session_duration=441.9, encryption=AES, ip_reputation_score=0.338, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=345, protocol=TCP, login_attempts=3, session_duration=1171.6, encryption=nan, ip_reputation_score=0.382, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=387, protocol=ICMP, login_attempts=2, session_duration=399.3, encryption=AES, ip_reputation_score=0.396, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=523, protocol=ICMP, login_attempts=3, session_duration=1107.2, encryption=DES, ip_reputation_score=0.407, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=336, protocol=ICMP, login_attempts=1, session_duration=760.3, encryption=AES, ip_reputation_score=0.166, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=546, protocol=UDP, login_attempts=5, session_duration=567.7, encryption=AES, ip_reputation_score=0.266, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=509, protocol=ICMP, login_attempts=6, session_duration=793.8, encryption=AES, ip_reputation_score=0.149, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=602, protocol=ICMP, login_attempts=5, session_duration=314.2, encryption=AES, ip_reputation_score=0.289, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=360, protocol=ICMP, login_attempts=3, session_duration=403.5, encryption=AES, ip_reputation_score=0.156, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=542, protocol=UDP, login_attempts=3, session_duration=240.0, encryption=AES, ip_reputation_score=0.502, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=308, protocol=UDP, login_attempts=5, session_duration=709.6, encryption=AES, ip_reputation_score=0.189, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=578, protocol=UDP, login_attempts=4, session_duration=252.9, encryption=AES, ip_reputation_score=0.301, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=654, protocol=UDP, login_attempts=3, session_duration=482.3, encryption=AES, ip_reputation_score=0.521, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=525, protocol=UDP, login_attempts=4, session_duration=185.2, encryption=AES, ip_reputation_score=0.509, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=432, protocol=TCP, login_attempts=3, session_duration=1356.4, encryption=nan, ip_reputation_score=0.321, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=754, protocol=ICMP, login_attempts=2, session_duration=786.0, encryption=AES, ip_reputation_score=0.133, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=425, protocol=ICMP, login_attempts=5, session_duration=109.7, encryption=DES, ip_reputation_score=0.146, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=492, protocol=TCP, login_attempts=7, session_duration=905.0, encryption=nan, ip_reputation_score=0.404, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=534, protocol=TCP, login_attempts=5, session_duration=181.0, encryption=nan, ip_reputation_score=0.251, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=710, protocol=ICMP, login_attempts=3, session_duration=113.5, encryption=AES, ip_reputation_score=0.204, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=591, protocol=TCP, login_attempts=4, session_duration=269.7, encryption=nan, ip_reputation_score=0.240, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=407, protocol=ICMP, login_attempts=3, session_duration=207.6, encryption=DES, ip_reputation_score=0.276, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=462, protocol=TCP, login_attempts=5, session_duration=682.0, encryption=nan, ip_reputation_score=0.519, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=372, protocol=ICMP, login_attempts=1, session_duration=599.9, encryption=AES, ip_reputation_score=0.478, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=388, protocol=ICMP, login_attempts=6, session_duration=374.0, encryption=AES, ip_reputation_score=0.037, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=372, protocol=TCP, login_attempts=2, session_duration=1713.8, encryption=nan, ip_reputation_score=0.442, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=396, protocol=TCP, login_attempts=1, session_duration=1419.0, encryption=nan, ip_reputation_score=0.434, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=543, protocol=ICMP, login_attempts=2, session_duration=299.0, encryption=DES, ip_reputation_score=0.221, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=588, protocol=ICMP, login_attempts=1, session_duration=178.8, encryption=DES, ip_reputation_score=0.140, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=630, protocol=UDP, login_attempts=3, session_duration=533.9, encryption=AES, ip_reputation_score=0.222, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=525, protocol=UDP, login_attempts=4, session_duration=312.4, encryption=AES, ip_reputation_score=0.077, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=409, protocol=TCP, login_attempts=4, session_duration=1059.2, encryption=nan, ip_reputation_score=0.246, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=299, protocol=TCP, login_attempts=2, session_duration=1040.8, encryption=nan, ip_reputation_score=0.177, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=524, protocol=ICMP, login_attempts=5, session_duration=106.3, encryption=AES, ip_reputation_score=0.463, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=430, protocol=ICMP, login_attempts=6, session_duration=519.6, encryption=AES, ip_reputation_score=0.415, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=469, protocol=UDP, login_attempts=6, session_duration=652.3, encryption=AES, ip_reputation_score=0.382, failed_logins=0, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=520, protocol=UDP, login_attempts=5, session_duration=748.9, encryption=AES, ip_reputation_score=0.230, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=188, protocol=ICMP, login_attempts=2, session_duration=686.4, encryption=AES, ip_reputation_score=0.268, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=498, protocol=ICMP, login_attempts=4, session_duration=624.5, encryption=DES, ip_reputation_score=0.214, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=366, protocol=TCP, login_attempts=3, session_duration=1088.8, encryption=nan, ip_reputation_score=0.165, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=594, protocol=ICMP, login_attempts=5, session_duration=208.4, encryption=AES, ip_reputation_score=0.268, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=471, protocol=ICMP, login_attempts=4, session_duration=290.7, encryption=AES, ip_reputation_score=0.150, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=587, protocol=UDP, login_attempts=4, session_duration=934.4, encryption=AES, ip_reputation_score=0.428, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=203, protocol=TCP, login_attempts=5, session_duration=597.7, encryption=nan, ip_reputation_score=0.462, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=465, protocol=TCP, login_attempts=5, session_duration=600.0, encryption=nan, ip_reputation_score=0.470, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=707, protocol=ICMP, login_attempts=4, session_duration=341.2, encryption=AES, ip_reputation_score=0.343, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=383, protocol=UDP, login_attempts=3, session_duration=654.8, encryption=AES, ip_reputation_score=0.286, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=854, protocol=TCP, login_attempts=4, session_duration=557.4, encryption=nan, ip_reputation_score=0.338, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=560, protocol=ICMP, login_attempts=2, session_duration=452.5, encryption=AES, ip_reputation_score=0.078, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=339, protocol=UDP, login_attempts=5, session_duration=1.7, encryption=DES, ip_reputation_score=0.337, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=513, protocol=ICMP, login_attempts=4, session_duration=52.2, encryption=AES, ip_reputation_score=0.356, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=337, protocol=ICMP, login_attempts=3, session_duration=518.9, encryption=DES, ip_reputation_score=0.428, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=414, protocol=ICMP, login_attempts=2, session_duration=169.9, encryption=DES, ip_reputation_score=0.397, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=716, protocol=UDP, login_attempts=3, session_duration=327.9, encryption=AES, ip_reputation_score=0.196, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=912, protocol=ICMP, login_attempts=2, session_duration=1338.8, encryption=AES, ip_reputation_score=0.136, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=426, protocol=TCP, login_attempts=5, session_duration=928.2, encryption=nan, ip_reputation_score=0.566, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=525, protocol=ICMP, login_attempts=6, session_duration=432.2, encryption=AES, ip_reputation_score=0.228, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=305, protocol=TCP, login_attempts=6, session_duration=223.0, encryption=nan, ip_reputation_score=0.374, failed_logins=0, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=717, protocol=ICMP, login_attempts=5, session_duration=282.4, encryption=AES, ip_reputation_score=0.187, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=430, protocol=UDP, login_attempts=1, session_duration=994.7, encryption=AES, ip_reputation_score=0.369, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=762, protocol=TCP, login_attempts=3, session_duration=748.0, encryption=nan, ip_reputation_score=0.242, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=349, protocol=TCP, login_attempts=6, session_duration=463.9, encryption=nan, ip_reputation_score=0.388, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=634, protocol=UDP, login_attempts=4, session_duration=251.7, encryption=DES, ip_reputation_score=0.133, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=588, protocol=ICMP, login_attempts=4, session_duration=227.3, encryption=DES, ip_reputation_score=0.231, failed_logins=3, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=531, protocol=ICMP, login_attempts=4, session_duration=434.0, encryption=DES, ip_reputation_score=0.466, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=370, protocol=TCP, login_attempts=6, session_duration=976.1, encryption=nan, ip_reputation_score=0.228, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=281, protocol=TCP, login_attempts=4, session_duration=289.4, encryption=nan, ip_reputation_score=0.253, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=387, protocol=ICMP, login_attempts=3, session_duration=1119.7, encryption=AES, ip_reputation_score=0.425, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=433, protocol=ICMP, login_attempts=6, session_duration=292.9, encryption=AES, ip_reputation_score=0.401, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=478, protocol=TCP, login_attempts=6, session_duration=1460.1, encryption=nan, ip_reputation_score=0.361, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=489, protocol=UDP, login_attempts=4, session_duration=507.3, encryption=AES, ip_reputation_score=0.481, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=711, protocol=ICMP, login_attempts=5, session_duration=257.8, encryption=DES, ip_reputation_score=0.359, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=374, protocol=ICMP, login_attempts=6, session_duration=682.1, encryption=AES, ip_reputation_score=0.286, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=602, protocol=ICMP, login_attempts=3, session_duration=1634.0, encryption=AES, ip_reputation_score=0.150, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=586, protocol=ICMP, login_attempts=4, session_duration=635.5, encryption=AES, ip_reputation_score=0.098, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=346, protocol=TCP, login_attempts=5, session_duration=760.1, encryption=nan, ip_reputation_score=0.178, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=601, protocol=UDP, login_attempts=5, session_duration=817.6, encryption=AES, ip_reputation_score=0.272, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=473, protocol=UDP, login_attempts=4, session_duration=261.0, encryption=AES, ip_reputation_score=0.123, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=409, protocol=ICMP, login_attempts=3, session_duration=182.6, encryption=AES, ip_reputation_score=0.269, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=725, protocol=ICMP, login_attempts=4, session_duration=1420.0, encryption=DES, ip_reputation_score=0.114, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=434, protocol=TCP, login_attempts=2, session_duration=134.0, encryption=nan, ip_reputation_score=0.405, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=299, protocol=ICMP, login_attempts=5, session_duration=759.6, encryption=AES, ip_reputation_score=0.035, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=548, protocol=UDP, login_attempts=7, session_duration=9.5, encryption=DES, ip_reputation_score=0.143, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=424, protocol=UDP, login_attempts=3, session_duration=1174.6, encryption=AES, ip_reputation_score=0.160, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=446, protocol=UDP, login_attempts=4, session_duration=300.3, encryption=AES, ip_reputation_score=0.074, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=379, protocol=ICMP, login_attempts=4, session_duration=285.1, encryption=AES, ip_reputation_score=0.520, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=209, protocol=ICMP, login_attempts=1, session_duration=1197.7, encryption=AES, ip_reputation_score=0.476, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=606, protocol=UDP, login_attempts=2, session_duration=603.0, encryption=AES, ip_reputation_score=0.382, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=435, protocol=ICMP, login_attempts=2, session_duration=552.0, encryption=DES, ip_reputation_score=0.187, failed_logins=3, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=546, protocol=ICMP, login_attempts=5, session_duration=38.2, encryption=AES, ip_reputation_score=0.056, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=615, protocol=UDP, login_attempts=5, session_duration=1173.4, encryption=AES, ip_reputation_score=0.209, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=598, protocol=UDP, login_attempts=2, session_duration=294.7, encryption=AES, ip_reputation_score=0.416, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=663, protocol=ICMP, login_attempts=5, session_duration=514.8, encryption=DES, ip_reputation_score=0.266, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=316, protocol=UDP, login_attempts=3, session_duration=76.0, encryption=AES, ip_reputation_score=0.517, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=636, protocol=ICMP, login_attempts=5, session_duration=533.7, encryption=AES, ip_reputation_score=0.142, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=453, protocol=UDP, login_attempts=6, session_duration=72.4, encryption=AES, ip_reputation_score=0.140, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=362, protocol=ICMP, login_attempts=7, session_duration=470.5, encryption=AES, ip_reputation_score=0.226, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=224, protocol=TCP, login_attempts=3, session_duration=89.4, encryption=nan, ip_reputation_score=0.538, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=574, protocol=ICMP, login_attempts=4, session_duration=387.7, encryption=DES, ip_reputation_score=0.539, failed_logins=0, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=487, protocol=TCP, login_attempts=3, session_duration=29.8, encryption=nan, ip_reputation_score=0.237, failed_logins=3, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=516, protocol=ICMP, login_attempts=5, session_duration=595.1, encryption=DES, ip_reputation_score=0.490, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=492, protocol=ICMP, login_attempts=8, session_duration=152.2, encryption=DES, ip_reputation_score=0.344, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=718, protocol=ICMP, login_attempts=1, session_duration=878.9, encryption=AES, ip_reputation_score=0.274, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=897, protocol=TCP, login_attempts=3, session_duration=485.5, encryption=nan, ip_reputation_score=0.182, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=568, protocol=UDP, login_attempts=5, session_duration=496.7, encryption=AES, ip_reputation_score=0.138, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=595, protocol=TCP, login_attempts=4, session_duration=807.4, encryption=nan, ip_reputation_score=0.315, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=426, protocol=UDP, login_attempts=2, session_duration=1242.9, encryption=AES, ip_reputation_score=0.311, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=825, protocol=ICMP, login_attempts=5, session_duration=234.6, encryption=DES, ip_reputation_score=0.169, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=279, protocol=ICMP, login_attempts=4, session_duration=242.9, encryption=AES, ip_reputation_score=0.254, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=378, protocol=UDP, login_attempts=5, session_duration=671.2, encryption=DES, ip_reputation_score=0.182, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=394, protocol=UDP, login_attempts=1, session_duration=732.1, encryption=AES, ip_reputation_score=0.211, failed_logins=0, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=557, protocol=TCP, login_attempts=5, session_duration=745.6, encryption=nan, ip_reputation_score=0.322, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=490, protocol=TCP, login_attempts=4, session_duration=583.4, encryption=nan, ip_reputation_score=0.227, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=487, protocol=UDP, login_attempts=3, session_duration=953.5, encryption=DES, ip_reputation_score=0.146, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=226, protocol=TCP, login_attempts=4, session_duration=162.9, encryption=nan, ip_reputation_score=0.464, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=538, protocol=UDP, login_attempts=4, session_duration=975.9, encryption=AES, ip_reputation_score=0.274, failed_logins=3, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=303, protocol=ICMP, login_attempts=5, session_duration=879.9, encryption=AES, ip_reputation_score=0.170, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=353, protocol=UDP, login_attempts=3, session_duration=546.9, encryption=DES, ip_reputation_score=0.373, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=550, protocol=ICMP, login_attempts=5, session_duration=48.0, encryption=DES, ip_reputation_score=0.067, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=594, protocol=UDP, login_attempts=7, session_duration=87.6, encryption=AES, ip_reputation_score=0.080, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=480, protocol=TCP, login_attempts=5, session_duration=322.9, encryption=nan, ip_reputation_score=0.536, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=604, protocol=ICMP, login_attempts=3, session_duration=37.1, encryption=DES, ip_reputation_score=0.302, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=289, protocol=ICMP, login_attempts=3, session_duration=384.0, encryption=AES, ip_reputation_score=0.258, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=701, protocol=UDP, login_attempts=4, session_duration=123.5, encryption=AES, ip_reputation_score=0.232, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=676, protocol=UDP, login_attempts=4, session_duration=1086.7, encryption=AES, ip_reputation_score=0.438, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=720, protocol=UDP, login_attempts=1, session_duration=21.5, encryption=AES, ip_reputation_score=0.354, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=539, protocol=UDP, login_attempts=6, session_duration=1133.9, encryption=AES, ip_reputation_score=0.233, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=484, protocol=ICMP, login_attempts=6, session_duration=214.8, encryption=AES, ip_reputation_score=0.471, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=387, protocol=TCP, login_attempts=3, session_duration=99.5, encryption=nan, ip_reputation_score=0.492, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=599, protocol=TCP, login_attempts=2, session_duration=830.6, encryption=nan, ip_reputation_score=0.121, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=392, protocol=ICMP, login_attempts=4, session_duration=96.2, encryption=AES, ip_reputation_score=0.335, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=510, protocol=UDP, login_attempts=2, session_duration=1364.6, encryption=DES, ip_reputation_score=0.279, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=595, protocol=UDP, login_attempts=5, session_duration=31.5, encryption=AES, ip_reputation_score=0.219, failed_logins=3, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=383, protocol=ICMP, login_attempts=5, session_duration=46.2, encryption=DES, ip_reputation_score=0.324, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=492, protocol=ICMP, login_attempts=5, session_duration=555.8, encryption=DES, ip_reputation_score=0.050, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=510, protocol=UDP, login_attempts=4, session_duration=1055.3, encryption=AES, ip_reputation_score=0.245, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=729, protocol=TCP, login_attempts=4, session_duration=564.6, encryption=nan, ip_reputation_score=0.069, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=716, protocol=UDP, login_attempts=5, session_duration=1024.5, encryption=AES, ip_reputation_score=0.473, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=416, protocol=UDP, login_attempts=4, session_duration=506.3, encryption=AES, ip_reputation_score=0.364, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=302, protocol=UDP, login_attempts=3, session_duration=849.3, encryption=AES, ip_reputation_score=0.465, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=421, protocol=ICMP, login_attempts=7, session_duration=396.0, encryption=AES, ip_reputation_score=0.379, failed_logins=0, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=301, protocol=UDP, login_attempts=1, session_duration=291.4, encryption=AES, ip_reputation_score=0.275, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=420, protocol=TCP, login_attempts=3, session_duration=1731.7, encryption=nan, ip_reputation_score=0.067, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=531, protocol=TCP, login_attempts=2, session_duration=325.1, encryption=nan, ip_reputation_score=0.091, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=585, protocol=TCP, login_attempts=4, session_duration=843.7, encryption=nan, ip_reputation_score=0.223, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=617, protocol=ICMP, login_attempts=6, session_duration=1362.7, encryption=DES, ip_reputation_score=0.136, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=543, protocol=ICMP, login_attempts=3, session_duration=786.9, encryption=AES, ip_reputation_score=0.416, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=534, protocol=UDP, login_attempts=1, session_duration=433.0, encryption=AES, ip_reputation_score=0.237, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=244, protocol=ICMP, login_attempts=3, session_duration=16.3, encryption=AES, ip_reputation_score=0.116, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=878, protocol=TCP, login_attempts=3, session_duration=460.4, encryption=nan, ip_reputation_score=0.332, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=538, protocol=ICMP, login_attempts=3, session_duration=1576.3, encryption=DES, ip_reputation_score=0.301, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=364, protocol=UDP, login_attempts=3, session_duration=1552.1, encryption=DES, ip_reputation_score=0.288, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=362, protocol=TCP, login_attempts=4, session_duration=846.3, encryption=nan, ip_reputation_score=0.208, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=578, protocol=TCP, login_attempts=3, session_duration=783.9, encryption=nan, ip_reputation_score=0.387, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=671, protocol=ICMP, login_attempts=5, session_duration=966.2, encryption=AES, ip_reputation_score=0.185, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=293, protocol=ICMP, login_attempts=3, session_duration=1183.9, encryption=AES, ip_reputation_score=0.513, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=619, protocol=ICMP, login_attempts=4, session_duration=951.4, encryption=DES, ip_reputation_score=0.235, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=370, protocol=ICMP, login_attempts=2, session_duration=816.4, encryption=AES, ip_reputation_score=0.530, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=509, protocol=ICMP, login_attempts=4, session_duration=94.9, encryption=AES, ip_reputation_score=0.290, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=583, protocol=ICMP, login_attempts=6, session_duration=164.1, encryption=DES, ip_reputation_score=0.419, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=525, protocol=UDP, login_attempts=4, session_duration=24.3, encryption=AES, ip_reputation_score=0.077, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=460, protocol=ICMP, login_attempts=5, session_duration=126.9, encryption=AES, ip_reputation_score=0.121, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=419, protocol=UDP, login_attempts=4, session_duration=1.7, encryption=AES, ip_reputation_score=0.500, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=600, protocol=UDP, login_attempts=5, session_duration=121.1, encryption=AES, ip_reputation_score=0.483, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=394, protocol=UDP, login_attempts=4, session_duration=37.2, encryption=DES, ip_reputation_score=0.253, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=559, protocol=ICMP, login_attempts=4, session_duration=1408.4, encryption=DES, ip_reputation_score=0.190, failed_logins=0, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=540, protocol=UDP, login_attempts=3, session_duration=140.7, encryption=DES, ip_reputation_score=0.407, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=389, protocol=UDP, login_attempts=1, session_duration=505.3, encryption=AES, ip_reputation_score=0.307, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=431, protocol=ICMP, login_attempts=3, session_duration=2.9, encryption=DES, ip_reputation_score=0.203, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=347, protocol=ICMP, login_attempts=7, session_duration=506.1, encryption=AES, ip_reputation_score=0.153, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=559, protocol=UDP, login_attempts=4, session_duration=43.4, encryption=AES, ip_reputation_score=0.317, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=737, protocol=ICMP, login_attempts=4, session_duration=51.0, encryption=AES, ip_reputation_score=0.386, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=383, protocol=UDP, login_attempts=3, session_duration=828.2, encryption=DES, ip_reputation_score=0.369, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=500, protocol=TCP, login_attempts=3, session_duration=587.7, encryption=nan, ip_reputation_score=0.329, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=261, protocol=ICMP, login_attempts=2, session_duration=795.7, encryption=AES, ip_reputation_score=0.101, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=308, protocol=TCP, login_attempts=8, session_duration=421.4, encryption=nan, ip_reputation_score=0.324, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=711, protocol=ICMP, login_attempts=2, session_duration=207.2, encryption=AES, ip_reputation_score=0.075, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=317, protocol=UDP, login_attempts=5, session_duration=127.0, encryption=DES, ip_reputation_score=0.069, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=670, protocol=TCP, login_attempts=5, session_duration=805.3, encryption=nan, ip_reputation_score=0.070, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=444, protocol=UDP, login_attempts=3, session_duration=728.5, encryption=DES, ip_reputation_score=0.233, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=577, protocol=TCP, login_attempts=5, session_duration=1068.2, encryption=nan, ip_reputation_score=0.227, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=754, protocol=ICMP, login_attempts=1, session_duration=803.7, encryption=AES, ip_reputation_score=0.114, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=406, protocol=ICMP, login_attempts=4, session_duration=127.6, encryption=DES, ip_reputation_score=0.166, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=691, protocol=TCP, login_attempts=5, session_duration=23.4, encryption=nan, ip_reputation_score=0.381, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=571, protocol=TCP, login_attempts=4, session_duration=174.6, encryption=nan, ip_reputation_score=0.336, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=527, protocol=UDP, login_attempts=5, session_duration=259.2, encryption=AES, ip_reputation_score=0.158, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=282, protocol=ICMP, login_attempts=3, session_duration=1236.8, encryption=AES, ip_reputation_score=0.554, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=305, protocol=TCP, login_attempts=1, session_duration=1333.6, encryption=nan, ip_reputation_score=0.465, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=646, protocol=UDP, login_attempts=6, session_duration=111.0, encryption=AES, ip_reputation_score=0.306, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=651, protocol=ICMP, login_attempts=2, session_duration=133.0, encryption=DES, ip_reputation_score=0.118, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=518, protocol=TCP, login_attempts=5, session_duration=317.2, encryption=nan, ip_reputation_score=0.271, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=637, protocol=ICMP, login_attempts=2, session_duration=567.7, encryption=DES, ip_reputation_score=0.447, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=646, protocol=TCP, login_attempts=3, session_duration=954.5, encryption=nan, ip_reputation_score=0.250, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=293, protocol=ICMP, login_attempts=1, session_duration=818.9, encryption=AES, ip_reputation_score=0.550, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=665, protocol=ICMP, login_attempts=6, session_duration=218.2, encryption=DES, ip_reputation_score=0.178, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=415, protocol=ICMP, login_attempts=5, session_duration=703.5, encryption=DES, ip_reputation_score=0.262, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=621, protocol=ICMP, login_attempts=4, session_duration=477.0, encryption=DES, ip_reputation_score=0.181, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=188, protocol=TCP, login_attempts=3, session_duration=173.7, encryption=nan, ip_reputation_score=0.379, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=795, protocol=ICMP, login_attempts=4, session_duration=176.1, encryption=DES, ip_reputation_score=0.394, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=645, protocol=TCP, login_attempts=2, session_duration=750.7, encryption=nan, ip_reputation_score=0.309, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=372, protocol=TCP, login_attempts=4, session_duration=1381.7, encryption=nan, ip_reputation_score=0.233, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=600, protocol=TCP, login_attempts=6, session_duration=1077.4, encryption=nan, ip_reputation_score=0.329, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=398, protocol=UDP, login_attempts=7, session_duration=577.4, encryption=DES, ip_reputation_score=0.303, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=390, protocol=UDP, login_attempts=5, session_duration=669.4, encryption=DES, ip_reputation_score=0.199, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=316, protocol=UDP, login_attempts=5, session_duration=65.8, encryption=DES, ip_reputation_score=0.211, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=544, protocol=ICMP, login_attempts=3, session_duration=431.7, encryption=AES, ip_reputation_score=0.561, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=542, protocol=ICMP, login_attempts=3, session_duration=177.4, encryption=AES, ip_reputation_score=0.495, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=490, protocol=ICMP, login_attempts=6, session_duration=1129.3, encryption=DES, ip_reputation_score=0.412, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=668, protocol=UDP, login_attempts=4, session_duration=342.7, encryption=AES, ip_reputation_score=0.157, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=377, protocol=ICMP, login_attempts=1, session_duration=601.4, encryption=AES, ip_reputation_score=0.687, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=350, protocol=ICMP, login_attempts=4, session_duration=1438.7, encryption=AES, ip_reputation_score=0.575, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=425, protocol=TCP, login_attempts=1, session_duration=820.8, encryption=nan, ip_reputation_score=0.455, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=289, protocol=UDP, login_attempts=2, session_duration=109.8, encryption=AES, ip_reputation_score=0.188, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=527, protocol=ICMP, login_attempts=4, session_duration=702.2, encryption=AES, ip_reputation_score=0.339, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=739, protocol=UDP, login_attempts=6, session_duration=1014.4, encryption=AES, ip_reputation_score=0.408, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=502, protocol=TCP, login_attempts=1, session_duration=449.8, encryption=nan, ip_reputation_score=0.106, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=763, protocol=TCP, login_attempts=3, session_duration=1.5, encryption=nan, ip_reputation_score=0.200, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=487, protocol=ICMP, login_attempts=5, session_duration=426.6, encryption=DES, ip_reputation_score=0.427, failed_logins=3, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=717, protocol=TCP, login_attempts=4, session_duration=738.7, encryption=nan, ip_reputation_score=0.251, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=393, protocol=TCP, login_attempts=6, session_duration=4.3, encryption=nan, ip_reputation_score=0.283, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=432, protocol=ICMP, login_attempts=6, session_duration=470.2, encryption=DES, ip_reputation_score=0.125, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=489, protocol=TCP, login_attempts=1, session_duration=1049.7, encryption=nan, ip_reputation_score=0.283, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=643, protocol=UDP, login_attempts=5, session_duration=894.8, encryption=AES, ip_reputation_score=0.405, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=566, protocol=ICMP, login_attempts=6, session_duration=652.3, encryption=DES, ip_reputation_score=0.386, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=420, protocol=ICMP, login_attempts=7, session_duration=313.0, encryption=AES, ip_reputation_score=0.201, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=206, protocol=ICMP, login_attempts=5, session_duration=621.5, encryption=AES, ip_reputation_score=0.347, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=540, protocol=ICMP, login_attempts=2, session_duration=642.5, encryption=DES, ip_reputation_score=0.210, failed_logins=3, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=521, protocol=ICMP, login_attempts=4, session_duration=139.2, encryption=DES, ip_reputation_score=0.361, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=448, protocol=UDP, login_attempts=4, session_duration=500.8, encryption=DES, ip_reputation_score=0.217, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=201, protocol=UDP, login_attempts=1, session_duration=460.3, encryption=AES, ip_reputation_score=0.288, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=380, protocol=UDP, login_attempts=2, session_duration=832.2, encryption=AES, ip_reputation_score=0.281, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=429, protocol=UDP, login_attempts=2, session_duration=129.7, encryption=AES, ip_reputation_score=0.588, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=321, protocol=ICMP, login_attempts=5, session_duration=256.0, encryption=AES, ip_reputation_score=0.258, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=671, protocol=ICMP, login_attempts=2, session_duration=0.5, encryption=DES, ip_reputation_score=0.379, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=421, protocol=ICMP, login_attempts=4, session_duration=1069.9, encryption=AES, ip_reputation_score=0.105, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=589, protocol=UDP, login_attempts=6, session_duration=439.4, encryption=AES, ip_reputation_score=0.101, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=500, protocol=TCP, login_attempts=4, session_duration=257.0, encryption=nan, ip_reputation_score=0.435, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=327, protocol=TCP, login_attempts=4, session_duration=863.0, encryption=nan, ip_reputation_score=0.509, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=514, protocol=ICMP, login_attempts=7, session_duration=10.4, encryption=AES, ip_reputation_score=0.317, failed_logins=3, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=365, protocol=TCP, login_attempts=2, session_duration=1012.4, encryption=nan, ip_reputation_score=0.361, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=525, protocol=TCP, login_attempts=1, session_duration=244.8, encryption=nan, ip_reputation_score=0.191, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=482, protocol=UDP, login_attempts=3, session_duration=612.7, encryption=AES, ip_reputation_score=0.188, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=434, protocol=TCP, login_attempts=2, session_duration=134.5, encryption=nan, ip_reputation_score=0.110, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=427, protocol=TCP, login_attempts=4, session_duration=658.1, encryption=nan, ip_reputation_score=0.479, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=419, protocol=ICMP, login_attempts=1, session_duration=422.6, encryption=AES, ip_reputation_score=0.397, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=695, protocol=ICMP, login_attempts=4, session_duration=61.9, encryption=DES, ip_reputation_score=0.516, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=477, protocol=ICMP, login_attempts=5, session_duration=352.8, encryption=DES, ip_reputation_score=0.297, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=499, protocol=TCP, login_attempts=1, session_duration=201.6, encryption=nan, ip_reputation_score=0.313, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=363, protocol=ICMP, login_attempts=4, session_duration=391.5, encryption=AES, ip_reputation_score=0.097, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=407, protocol=ICMP, login_attempts=2, session_duration=219.9, encryption=AES, ip_reputation_score=0.232, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=524, protocol=UDP, login_attempts=4, session_duration=20.3, encryption=AES, ip_reputation_score=0.058, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=751, protocol=UDP, login_attempts=3, session_duration=7.3, encryption=AES, ip_reputation_score=0.326, failed_logins=0, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=731, protocol=ICMP, login_attempts=2, session_duration=1069.9, encryption=AES, ip_reputation_score=0.148, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=439, protocol=ICMP, login_attempts=5, session_duration=570.1, encryption=AES, ip_reputation_score=0.558, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=769, protocol=ICMP, login_attempts=5, session_duration=302.1, encryption=AES, ip_reputation_score=0.269, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=794, protocol=ICMP, login_attempts=5, session_duration=429.4, encryption=AES, ip_reputation_score=0.389, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=543, protocol=ICMP, login_attempts=5, session_duration=360.5, encryption=DES, ip_reputation_score=0.366, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=323, protocol=UDP, login_attempts=4, session_duration=255.8, encryption=DES, ip_reputation_score=0.190, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=488, protocol=ICMP, login_attempts=6, session_duration=58.5, encryption=AES, ip_reputation_score=0.366, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=212, protocol=TCP, login_attempts=3, session_duration=433.1, encryption=nan, ip_reputation_score=0.505, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=246, protocol=UDP, login_attempts=6, session_duration=1003.2, encryption=AES, ip_reputation_score=0.182, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=436, protocol=ICMP, login_attempts=3, session_duration=605.5, encryption=AES, ip_reputation_score=0.079, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=489, protocol=UDP, login_attempts=5, session_duration=948.7, encryption=AES, ip_reputation_score=0.272, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=359, protocol=ICMP, login_attempts=3, session_duration=528.1, encryption=AES, ip_reputation_score=0.361, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=786, protocol=ICMP, login_attempts=5, session_duration=180.3, encryption=AES, ip_reputation_score=0.102, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=363, protocol=ICMP, login_attempts=2, session_duration=1014.5, encryption=AES, ip_reputation_score=0.640, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=186, protocol=ICMP, login_attempts=5, session_duration=723.1, encryption=AES, ip_reputation_score=0.226, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=374, protocol=ICMP, login_attempts=7, session_duration=820.3, encryption=AES, ip_reputation_score=0.181, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=280, protocol=TCP, login_attempts=3, session_duration=360.8, encryption=nan, ip_reputation_score=0.640, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=338, protocol=UDP, login_attempts=5, session_duration=518.2, encryption=DES, ip_reputation_score=0.214, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=536, protocol=UDP, login_attempts=3, session_duration=203.3, encryption=AES, ip_reputation_score=0.498, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=343, protocol=UDP, login_attempts=5, session_duration=10.0, encryption=DES, ip_reputation_score=0.131, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=679, protocol=ICMP, login_attempts=7, session_duration=112.2, encryption=AES, ip_reputation_score=0.439, failed_logins=0, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=580, protocol=ICMP, login_attempts=6, session_duration=549.4, encryption=DES, ip_reputation_score=0.351, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=600, protocol=ICMP, login_attempts=4, session_duration=528.2, encryption=DES, ip_reputation_score=0.144, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=185, protocol=TCP, login_attempts=5, session_duration=270.4, encryption=nan, ip_reputation_score=0.460, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=611, protocol=UDP, login_attempts=2, session_duration=227.5, encryption=AES, ip_reputation_score=0.296, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=369, protocol=ICMP, login_attempts=5, session_duration=346.2, encryption=AES, ip_reputation_score=0.369, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=394, protocol=UDP, login_attempts=1, session_duration=772.9, encryption=DES, ip_reputation_score=0.338, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=632, protocol=ICMP, login_attempts=7, session_duration=106.3, encryption=DES, ip_reputation_score=0.396, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=554, protocol=TCP, login_attempts=2, session_duration=749.6, encryption=nan, ip_reputation_score=0.473, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=232, protocol=ICMP, login_attempts=5, session_duration=767.4, encryption=AES, ip_reputation_score=0.436, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=489, protocol=ICMP, login_attempts=4, session_duration=800.9, encryption=DES, ip_reputation_score=0.421, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=693, protocol=UDP, login_attempts=6, session_duration=947.3, encryption=AES, ip_reputation_score=0.303, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=289, protocol=UDP, login_attempts=5, session_duration=124.8, encryption=AES, ip_reputation_score=0.338, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=492, protocol=UDP, login_attempts=1, session_duration=872.8, encryption=DES, ip_reputation_score=0.357, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=288, protocol=TCP, login_attempts=4, session_duration=62.9, encryption=nan, ip_reputation_score=0.409, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=388, protocol=ICMP, login_attempts=4, session_duration=116.1, encryption=DES, ip_reputation_score=0.527, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=614, protocol=ICMP, login_attempts=6, session_duration=427.5, encryption=AES, ip_reputation_score=0.413, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=345, protocol=ICMP, login_attempts=4, session_duration=146.5, encryption=DES, ip_reputation_score=0.279, failed_logins=3, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=317, protocol=UDP, login_attempts=4, session_duration=91.3, encryption=DES, ip_reputation_score=0.200, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=345, protocol=ICMP, login_attempts=4, session_duration=562.9, encryption=AES, ip_reputation_score=0.340, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=655, protocol=UDP, login_attempts=5, session_duration=140.3, encryption=AES, ip_reputation_score=0.458, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=269, protocol=ICMP, login_attempts=5, session_duration=869.3, encryption=AES, ip_reputation_score=0.425, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=550, protocol=ICMP, login_attempts=4, session_duration=374.8, encryption=AES, ip_reputation_score=0.476, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=500, protocol=TCP, login_attempts=2, session_duration=241.7, encryption=nan, ip_reputation_score=0.296, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=396, protocol=ICMP, login_attempts=3, session_duration=720.7, encryption=AES, ip_reputation_score=0.383, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=352, protocol=TCP, login_attempts=4, session_duration=923.1, encryption=nan, ip_reputation_score=0.175, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=194, protocol=ICMP, login_attempts=6, session_duration=135.4, encryption=AES, ip_reputation_score=0.284, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=505, protocol=ICMP, login_attempts=4, session_duration=18.4, encryption=DES, ip_reputation_score=0.143, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=338, protocol=TCP, login_attempts=5, session_duration=835.2, encryption=nan, ip_reputation_score=0.602, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=532, protocol=TCP, login_attempts=5, session_duration=88.1, encryption=nan, ip_reputation_score=0.409, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=698, protocol=ICMP, login_attempts=5, session_duration=604.0, encryption=DES, ip_reputation_score=0.250, failed_logins=2, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=465, protocol=UDP, login_attempts=5, session_duration=196.1, encryption=DES, ip_reputation_score=0.212, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=419, protocol=ICMP, login_attempts=5, session_duration=529.2, encryption=DES, ip_reputation_score=0.289, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=525, protocol=ICMP, login_attempts=3, session_duration=145.7, encryption=AES, ip_reputation_score=0.215, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=333, protocol=UDP, login_attempts=4, session_duration=90.7, encryption=AES, ip_reputation_score=0.440, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=364, protocol=UDP, login_attempts=5, session_duration=644.4, encryption=AES, ip_reputation_score=0.409, failed_logins=0, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=320, protocol=TCP, login_attempts=4, session_duration=194.8, encryption=nan, ip_reputation_score=0.489, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=420, protocol=ICMP, login_attempts=5, session_duration=244.3, encryption=AES, ip_reputation_score=0.524, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=572, protocol=TCP, login_attempts=3, session_duration=620.3, encryption=nan, ip_reputation_score=0.259, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=757, protocol=TCP, login_attempts=5, session_duration=534.7, encryption=nan, ip_reputation_score=0.161, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=661, protocol=ICMP, login_attempts=3, session_duration=192.5, encryption=AES, ip_reputation_score=0.360, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=388, protocol=TCP, login_attempts=5, session_duration=135.4, encryption=nan, ip_reputation_score=0.556, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=488, protocol=ICMP, login_attempts=6, session_duration=32.1, encryption=AES, ip_reputation_score=0.390, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=283, protocol=TCP, login_attempts=2, session_duration=896.8, encryption=nan, ip_reputation_score=0.416, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=530, protocol=ICMP, login_attempts=5, session_duration=1225.6, encryption=DES, ip_reputation_score=0.283, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=292, protocol=TCP, login_attempts=5, session_duration=588.5, encryption=nan, ip_reputation_score=0.303, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=465, protocol=TCP, login_attempts=2, session_duration=888.1, encryption=nan, ip_reputation_score=0.282, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=785, protocol=ICMP, login_attempts=4, session_duration=1209.8, encryption=AES, ip_reputation_score=0.241, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=545, protocol=UDP, login_attempts=2, session_duration=632.9, encryption=DES, ip_reputation_score=0.479, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=527, protocol=UDP, login_attempts=4, session_duration=278.2, encryption=AES, ip_reputation_score=0.199, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=728, protocol=TCP, login_attempts=3, session_duration=566.9, encryption=nan, ip_reputation_score=0.471, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=570, protocol=TCP, login_attempts=1, session_duration=1107.3, encryption=nan, ip_reputation_score=0.397, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=576, protocol=UDP, login_attempts=7, session_duration=227.0, encryption=AES, ip_reputation_score=0.222, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=547, protocol=TCP, login_attempts=5, session_duration=25.5, encryption=nan, ip_reputation_score=0.574, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=518, protocol=ICMP, login_attempts=1, session_duration=287.7, encryption=DES, ip_reputation_score=0.305, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=770, protocol=ICMP, login_attempts=2, session_duration=762.1, encryption=AES, ip_reputation_score=0.184, failed_logins=0, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 12, which has an attack rate of 27.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=470, protocol=ICMP, login_attempts=5, session_duration=315.0, encryption=AES, ip_reputation_score=0.357, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=397, protocol=ICMP, login_attempts=2, session_duration=786.4, encryption=AES, ip_reputation_score=0.406, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=442, protocol=ICMP, login_attempts=4, session_duration=981.9, encryption=DES, ip_reputation_score=0.322, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=435, protocol=UDP, login_attempts=2, session_duration=138.7, encryption=AES, ip_reputation_score=0.227, failed_logins=3, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=302, protocol=ICMP, login_attempts=2, session_duration=463.6, encryption=DES, ip_reputation_score=0.228, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=879, protocol=TCP, login_attempts=5, session_duration=509.3, encryption=nan, ip_reputation_score=0.337, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=618, protocol=ICMP, login_attempts=6, session_duration=445.4, encryption=DES, ip_reputation_score=0.076, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=702, protocol=ICMP, login_attempts=5, session_duration=1050.6, encryption=AES, ip_reputation_score=0.210, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=429, protocol=ICMP, login_attempts=4, session_duration=133.7, encryption=AES, ip_reputation_score=0.218, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=419, protocol=TCP, login_attempts=2, session_duration=1041.0, encryption=nan, ip_reputation_score=0.226, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=302, protocol=TCP, login_attempts=4, session_duration=251.5, encryption=nan, ip_reputation_score=0.429, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=611, protocol=ICMP, login_attempts=4, session_duration=116.5, encryption=DES, ip_reputation_score=0.276, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=497, protocol=ICMP, login_attempts=5, session_duration=753.0, encryption=AES, ip_reputation_score=0.532, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=443, protocol=ICMP, login_attempts=5, session_duration=1102.6, encryption=AES, ip_reputation_score=0.242, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=754, protocol=TCP, login_attempts=2, session_duration=993.8, encryption=nan, ip_reputation_score=0.226, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=303, protocol=UDP, login_attempts=4, session_duration=865.3, encryption=DES, ip_reputation_score=0.383, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=476, protocol=UDP, login_attempts=2, session_duration=362.6, encryption=AES, ip_reputation_score=0.486, failed_logins=1, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=545, protocol=UDP, login_attempts=4, session_duration=26.4, encryption=AES, ip_reputation_score=0.211, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=627, protocol=ICMP, login_attempts=4, session_duration=529.3, encryption=DES, ip_reputation_score=0.390, failed_logins=0, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=166, protocol=UDP, login_attempts=4, session_duration=332.4, encryption=AES, ip_reputation_score=0.258, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=288, protocol=UDP, login_attempts=4, session_duration=984.1, encryption=DES, ip_reputation_score=0.179, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=335, protocol=UDP, login_attempts=5, session_duration=10.6, encryption=AES, ip_reputation_score=0.329, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=625, protocol=ICMP, login_attempts=3, session_duration=730.9, encryption=DES, ip_reputation_score=0.074, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=559, protocol=ICMP, login_attempts=4, session_duration=977.1, encryption=DES, ip_reputation_score=0.217, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=498, protocol=UDP, login_attempts=4, session_duration=624.3, encryption=AES, ip_reputation_score=0.531, failed_logins=0, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=580, protocol=UDP, login_attempts=3, session_duration=192.5, encryption=DES, ip_reputation_score=0.137, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=584, protocol=ICMP, login_attempts=6, session_duration=829.2, encryption=DES, ip_reputation_score=0.461, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=614, protocol=UDP, login_attempts=3, session_duration=627.8, encryption=AES, ip_reputation_score=0.240, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=391, protocol=ICMP, login_attempts=5, session_duration=559.7, encryption=DES, ip_reputation_score=0.418, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=424, protocol=UDP, login_attempts=5, session_duration=584.0, encryption=AES, ip_reputation_score=0.176, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=456, protocol=ICMP, login_attempts=3, session_duration=1513.3, encryption=DES, ip_reputation_score=0.306, failed_logins=1, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=138, protocol=TCP, login_attempts=5, session_duration=753.0, encryption=nan, ip_reputation_score=0.463, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=404, protocol=UDP, login_attempts=3, session_duration=173.0, encryption=AES, ip_reputation_score=0.268, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=275, protocol=ICMP, login_attempts=3, session_duration=417.5, encryption=AES, ip_reputation_score=0.325, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=374, protocol=TCP, login_attempts=2, session_duration=1527.3, encryption=nan, ip_reputation_score=0.370, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=331, protocol=UDP, login_attempts=4, session_duration=298.0, encryption=AES, ip_reputation_score=0.200, failed_logins=2, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=539, protocol=UDP, login_attempts=2, session_duration=130.2, encryption=AES, ip_reputation_score=0.424, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=567, protocol=UDP, login_attempts=5, session_duration=80.8, encryption=AES, ip_reputation_score=0.039, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=348, protocol=TCP, login_attempts=1, session_duration=1550.2, encryption=nan, ip_reputation_score=0.296, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=357, protocol=ICMP, login_attempts=3, session_duration=247.2, encryption=AES, ip_reputation_score=0.374, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 10, which has an attack rate of 23.9%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=462, protocol=TCP, login_attempts=1, session_duration=36.8, encryption=nan, ip_reputation_score=0.145, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=744, protocol=UDP, login_attempts=2, session_duration=894.1, encryption=AES, ip_reputation_score=0.225, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=573, protocol=ICMP, login_attempts=2, session_duration=220.7, encryption=DES, ip_reputation_score=0.224, failed_logins=2, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=419, protocol=ICMP, login_attempts=5, session_duration=1295.1, encryption=DES, ip_reputation_score=0.140, failed_logins=1, unusual_time_access=0",
+    "output": "This session appears to be benign. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=522, protocol=UDP, login_attempts=1, session_duration=1409.7, encryption=AES, ip_reputation_score=0.331, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=374, protocol=UDP, login_attempts=1, session_duration=874.6, encryption=AES, ip_reputation_score=0.283, failed_logins=1, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 11, which has an attack rate of 20.7%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=551, protocol=TCP, login_attempts=4, session_duration=200.1, encryption=nan, ip_reputation_score=0.283, failed_logins=3, unusual_time_access=1",
+    "output": "This session is likely malicious. This session belongs to cluster 5, which has an attack rate of 26.3%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=553, protocol=ICMP, login_attempts=5, session_duration=601.6, encryption=DES, ip_reputation_score=0.377, failed_logins=0, unusual_time_access=0",
+    "output": "This session is likely malicious. This session belongs to cluster 9, which has an attack rate of 26.8%."
+  },
+  {
+    "instruction": "Analyze this network session and determine whether it is an attack based on its features and cluster assignment.",
+    "input": "network_packet_size=314, protocol=UDP, login_attempts=5, session_duration=279.8, encryption=DES, ip_reputation_score=0.264, failed_logins=2, unusual_time_access=1",
+    "output": "This session appears to be benign. This session belongs to cluster 13, which has an attack rate of 17.2%."
+  }
+]
