@@ -1,0 +1,318 @@
+{
+  "name": "Security Incident Triage Agent",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "trigger-1",
+      "name": "When clicking 'Test workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "incident-1",
+              "name": "incident_description",
+              "value": "An employee reported receiving a phishing email containing a malicious attachment. The attachment was opened on a workstation connected to the internal network. The employee's credentials may have been compromised, and unusual outbound traffic was detected from the affected machine to an unknown external IP address.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-incident",
+      "name": "Simulated Security Incident",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a cybersecurity incident triage analyst. Analyze the following security incident and provide your assessment.\n\nIncident Description:\n{{ $json.incident_description }}\n\nYou MUST respond in EXACTLY this format (no extra text before or after):\n\nSEVERITY: [Critical/High/Medium/Low]\nCATEGORY: [Phishing/Malware/Data Breach/Unauthorized Access/DDoS/Insider Threat/Other]\nSUMMARY: [One sentence summary of the incident]\nIMMEDIATE_ACTIONS: [List 3 immediate actions to take, separated by semicolons]\nRISK_SCORE: [A number from 1 to 10]",
+        "options": {}
+      },
+      "id": "ai-agent-triage",
+      "name": "AI Triage Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {
+          "temperature": 0.3
+        }
+      },
+      "id": "ollama-model-1",
+      "name": "Ollama Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [440, 220],
+      "credentials": {
+        "ollamaApi": {
+          "id": "ollama-cred",
+          "name": "Ollama Local"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse AI triage response\nconst response = $input.first().json.output || $input.first().json.text || '';\n\nlet severity = 'Unknown';\nlet category = 'Unknown';\nlet summary = 'Unable to parse';\nlet actions = 'None specified';\nlet riskScore = 0;\n\n// Extract fields from response\nconst severityMatch = response.match(/SEVERITY:\\s*(Critical|High|Medium|Low)/i);\nif (severityMatch) severity = severityMatch[1];\n\nconst categoryMatch = response.match(/CATEGORY:\\s*([^\\n]+)/i);\nif (categoryMatch) category = categoryMatch[1].trim();\n\nconst summaryMatch = response.match(/SUMMARY:\\s*([^\\n]+)/i);\nif (summaryMatch) summary = summaryMatch[1].trim();\n\nconst actionsMatch = response.match(/IMMEDIATE_ACTIONS:\\s*([^\\n]+)/i);\nif (actionsMatch) actions = actionsMatch[1].trim();\n\nconst scoreMatch = response.match(/RISK_SCORE:\\s*(\\d+)/i);\nif (scoreMatch) riskScore = parseInt(scoreMatch[1]);\n\nreturn [{\n  json: {\n    severity,\n    category,\n    summary,\n    immediate_actions: actions,\n    risk_score: riskScore,\n    raw_response: response,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "parse-response",
+      "name": "Parse AI Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-critical",
+              "leftValue": "={{ $json.severity }}",
+              "rightValue": "Critical",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "severity-check",
+      "name": "Is Critical or High?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [880, 0]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "response-critical",
+              "name": "response_action",
+              "value": "=URGENT RESPONSE ACTIVATED\n\n📊 Incident Analysis:\n- Severity: {{ $json.severity }}\n- Category: {{ $json.category }}\n- Risk Score: {{ $json.risk_score }}/10\n- Summary: {{ $json.summary }}\n\n🚨 Immediate Actions Required:\n{{ $json.immediate_actions }}\n\n📋 Auto-generated Response:\n1. Isolate affected systems immediately\n2. Alert SOC team and management\n3. Preserve forensic evidence\n4. Initiate incident response plan\n\nTimestamp: {{ $json.timestamp }}",
+              "type": "string"
+            },
+            {
+              "id": "escalation",
+              "name": "escalation_level",
+              "value": "EMERGENCY - Notify SOC, CISO, and Management",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "critical-response",
+      "name": "Critical Response",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1100, -100]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "response-normal",
+              "name": "response_action",
+              "value": "=STANDARD RESPONSE\n\n📊 Incident Analysis:\n- Severity: {{ $json.severity }}\n- Category: {{ $json.category }}\n- Risk Score: {{ $json.risk_score }}/10\n- Summary: {{ $json.summary }}\n\n📋 Recommended Actions:\n{{ $json.immediate_actions }}\n\n📝 This incident has been logged for review.\n\nTimestamp: {{ $json.timestamp }}",
+              "type": "string"
+            },
+            {
+              "id": "escalation-normal",
+              "name": "escalation_level",
+              "value": "STANDARD - Log and monitor",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "standard-response",
+      "name": "Standard Response",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1100, 100]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a senior cybersecurity reviewer. Review the following incident triage assessment and determine if it is accurate.\n\nOriginal Incident: An employee reported receiving a phishing email containing a malicious attachment. The attachment was opened on a workstation connected to the internal network. The employee's credentials may have been compromised, and unusual outbound traffic was detected from the affected machine to an unknown external IP address.\n\nTriage Assessment:\n- Severity: {{ $json.severity || $input.first().json.severity }}\n- Category: {{ $json.category || $input.first().json.category }}\n- Risk Score: {{ $json.risk_score || $input.first().json.risk_score }}/10\n\nRespond in EXACTLY this format:\nVALIDATION: [Correct/Incorrect]\nREASON: [One sentence explanation]\nADJUSTED_SEVERITY: [Critical/High/Medium/Low if adjustment needed, or Same]",
+        "options": {}
+      },
+      "id": "feedback-loop",
+      "name": "Feedback Loop - Validate Assessment",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [1320, 0]
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {
+          "temperature": 0.2
+        }
+      },
+      "id": "ollama-model-2",
+      "name": "Ollama Chat Model (Reviewer)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [1320, 220],
+      "credentials": {
+        "ollamaApi": {
+          "id": "ollama-cred",
+          "name": "Ollama Local"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse validation response and generate final report\nconst validationResponse = $input.first().json.output || $input.first().json.text || '';\n\nlet validation = 'Unknown';\nlet reason = 'Unable to parse';\nlet adjustedSeverity = 'Same';\n\nconst validMatch = validationResponse.match(/VALIDATION:\\s*(Correct|Incorrect)/i);\nif (validMatch) validation = validMatch[1];\n\nconst reasonMatch = validationResponse.match(/REASON:\\s*([^\\n]+)/i);\nif (reasonMatch) reason = reasonMatch[1].trim();\n\nconst adjMatch = validationResponse.match(/ADJUSTED_SEVERITY:\\s*(Critical|High|Medium|Low|Same)/i);\nif (adjMatch) adjustedSeverity = adjMatch[1];\n\nreturn [{\n  json: {\n    validation_result: validation,\n    validation_reason: reason,\n    adjusted_severity: adjustedSeverity,\n    raw_validation: validationResponse,\n    final_report: `\\n========== FINAL SECURITY INCIDENT REPORT ==========\\n\\n✅ Validation: ${validation}\\n📝 Reason: ${reason}\\n🔄 Severity Adjustment: ${adjustedSeverity}\\n\\n====================================================\\n`,\n    completed_at: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "final-report",
+      "name": "Generate Final Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 0]
+    }
+  ],
+  "connections": {
+    "When clicking 'Test workflow'": {
+      "main": [
+        [
+          {
+            "node": "Simulated Security Incident",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simulated Security Incident": {
+      "main": [
+        [
+          {
+            "node": "AI Triage Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Triage Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Triage Agent": {
+      "main": [
+        [
+          {
+            "node": "Parse AI Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse AI Response": {
+      "main": [
+        [
+          {
+            "node": "Is Critical or High?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Critical or High?": {
+      "main": [
+        [
+          {
+            "node": "Critical Response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Standard Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Critical Response": {
+      "main": [
+        [
+          {
+            "node": "Feedback Loop - Validate Assessment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Standard Response": {
+      "main": [
+        [
+          {
+            "node": "Feedback Loop - Validate Assessment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model (Reviewer)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Feedback Loop - Validate Assessment",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Feedback Loop - Validate Assessment": {
+      "main": [
+        [
+          {
+            "node": "Generate Final Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
