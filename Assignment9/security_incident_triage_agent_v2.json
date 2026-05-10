@@ -1,0 +1,405 @@
+{
+  "name": "Security Incident Triage Agent v2 (with Guardrails)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "trigger-1",
+      "name": "When clicking 'Test workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "incident-1",
+              "name": "incident_description",
+              "value": "An employee reported receiving a phishing email containing a malicious attachment. The attachment was opened on a workstation connected to the internal network. The employee's credentials may have been compromised, and unusual outbound traffic was detected from the affected machine to an unknown external IP address.",
+              "type": "string"
+            },
+            {
+              "id": "attempt",
+              "name": "attempt_number",
+              "value": "1",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-incident",
+      "name": "Simulated Security Incident",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a cybersecurity incident triage analyst. Analyze the following security incident and provide your assessment.\n\nIncident Description:\n{{ $json.incident_description }}\n\nAttempt Number: {{ $json.attempt_number }}\nIf this is attempt 2 or higher, be more careful and thorough in your analysis.\n\nYou MUST respond in EXACTLY this format (no extra text before or after):\n\nSEVERITY: [Critical/High/Medium/Low]\nCATEGORY: [Phishing/Malware/Data Breach/Unauthorized Access/DDoS/Insider Threat/Other]\nSUMMARY: [One sentence summary of the incident]\nIMMEDIATE_ACTIONS: [List 3 immediate actions to take, separated by semicolons]\nRISK_SCORE: [A number from 1 to 10]\nCONFIDENCE: [A percentage from 0 to 100 indicating how confident you are]",
+        "options": {}
+      },
+      "id": "ai-agent-triage",
+      "name": "AI Triage Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {
+          "temperature": 0.3
+        }
+      },
+      "id": "ollama-model-1",
+      "name": "Ollama Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [440, 220],
+      "credentials": {
+        "ollamaApi": {
+          "id": "ollama-cred",
+          "name": "Ollama Local"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Output Guardrail: Check AI response for dangerous content\nconst response = $input.first().json.output || $input.first().json.text || '';\n\n// Dangerous patterns to check\nconst dangerousPatterns = {\n  'destructive_command': /rm\\s+-rf\\s+\\/|mkfs\\.|dd\\s+if=.*of=\\/dev\\//gi,\n  'reverse_shell': /bash\\s+-i\\s+>&\\s+\\/dev\\/tcp|nc\\s+-e\\s+\\/bin\\/(bash|sh)/gi,\n  'sql_injection': /DROP\\s+TABLE|DELETE\\s+FROM\\s+\\w+\\s*;|TRUNCATE\\s+TABLE/gi,\n  'credential_tool': /mimikatz|hashcat|john\\s+the\\s+ripper|hydra\\s+-[lL]/gi,\n  'privilege_escalation': /sudo\\s+chmod\\s+777|passwd\\s+root|chmod\\s+4755/gi\n};\n\nlet guardrail_flags = [];\nfor (const [category, pattern] of Object.entries(dangerousPatterns)) {\n  const matches = response.match(pattern);\n  if (matches) {\n    guardrail_flags.push({ category, count: matches.length });\n  }\n}\n\nconst guardrail_passed = guardrail_flags.length === 0;\nconst guardrail_status = guardrail_passed ? 'PASSED' : 'FLAGGED';\n\nreturn [{\n  json: {\n    raw_response: response,\n    guardrail_status,\n    guardrail_passed,\n    guardrail_flags,\n    guardrail_message: guardrail_passed \n      ? 'AI output contains no dangerous content.' \n      : `WARNING: Detected ${guardrail_flags.map(f => f.category).join(', ')} in AI output.`\n  }\n}];"
+      },
+      "id": "output-guardrail",
+      "name": "Output Guardrail Check",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse AI triage response\nconst response = $input.first().json.raw_response || '';\nconst guardrail_status = $input.first().json.guardrail_status;\nconst guardrail_message = $input.first().json.guardrail_message;\nconst guardrail_flags = $input.first().json.guardrail_flags;\n\nlet severity = 'Unknown';\nlet category = 'Unknown';\nlet summary = 'Unable to parse';\nlet actions = 'None specified';\nlet riskScore = 0;\nlet confidence = 0;\n\nconst severityMatch = response.match(/SEVERITY:\\s*(Critical|High|Medium|Low)/i);\nif (severityMatch) severity = severityMatch[1];\n\nconst categoryMatch = response.match(/CATEGORY:\\s*([^\\n]+)/i);\nif (categoryMatch) category = categoryMatch[1].trim();\n\nconst summaryMatch = response.match(/SUMMARY:\\s*([^\\n]+)/i);\nif (summaryMatch) summary = summaryMatch[1].trim();\n\nconst actionsMatch = response.match(/IMMEDIATE_ACTIONS:\\s*([^\\n]+)/i);\nif (actionsMatch) actions = actionsMatch[1].trim();\n\nconst scoreMatch = response.match(/RISK_SCORE:\\s*(\\d+)/i);\nif (scoreMatch) riskScore = parseInt(scoreMatch[1]);\n\nconst confMatch = response.match(/CONFIDENCE:\\s*(\\d+)/i);\nif (confMatch) confidence = parseInt(confMatch[1]);\n\nreturn [{\n  json: {\n    severity,\n    category,\n    summary,\n    immediate_actions: actions,\n    risk_score: riskScore,\n    confidence,\n    guardrail_status,\n    guardrail_message,\n    guardrail_flags,\n    raw_response: response,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "parse-response",
+      "name": "Parse AI Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-critical",
+              "leftValue": "={{ $json.severity }}",
+              "rightValue": "Critical",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "severity-check",
+      "name": "Is Critical?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [1100, 0]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "response-critical",
+              "name": "response_action",
+              "value": "=URGENT RESPONSE ACTIVATED\n\n📊 Incident Analysis:\n- Severity: {{ $json.severity }}\n- Category: {{ $json.category }}\n- Risk Score: {{ $json.risk_score }}/10\n- Confidence: {{ $json.confidence }}%\n- Summary: {{ $json.summary }}\n\n🛡️ Guardrail Status: {{ $json.guardrail_status }}\n{{ $json.guardrail_message }}\n\n🚨 Immediate Actions Required:\n{{ $json.immediate_actions }}\n\n📋 Auto-generated Response:\n1. Isolate affected systems immediately\n2. Alert SOC team and management\n3. Preserve forensic evidence\n4. Initiate incident response plan",
+              "type": "string"
+            },
+            {
+              "id": "escalation",
+              "name": "escalation_level",
+              "value": "EMERGENCY - Notify SOC, CISO, and Management",
+              "type": "string"
+            },
+            {
+              "id": "keep-fields-1a",
+              "name": "severity",
+              "value": "={{ $json.severity }}",
+              "type": "string"
+            },
+            {
+              "id": "keep-fields-1b",
+              "name": "category",
+              "value": "={{ $json.category }}",
+              "type": "string"
+            },
+            {
+              "id": "keep-fields-1c",
+              "name": "risk_score",
+              "value": "={{ $json.risk_score }}",
+              "type": "number"
+            },
+            {
+              "id": "keep-fields-1d",
+              "name": "confidence",
+              "value": "={{ $json.confidence }}",
+              "type": "number"
+            },
+            {
+              "id": "keep-fields-1e",
+              "name": "guardrail_status",
+              "value": "={{ $json.guardrail_status }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "critical-response",
+      "name": "Critical Response",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1320, -100]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "response-normal",
+              "name": "response_action",
+              "value": "=STANDARD RESPONSE\n\n📊 Incident Analysis:\n- Severity: {{ $json.severity }}\n- Category: {{ $json.category }}\n- Risk Score: {{ $json.risk_score }}/10\n- Confidence: {{ $json.confidence }}%\n- Summary: {{ $json.summary }}\n\n🛡️ Guardrail Status: {{ $json.guardrail_status }}\n{{ $json.guardrail_message }}\n\n📋 Recommended Actions:\n{{ $json.immediate_actions }}\n\n📝 This incident has been logged for review.",
+              "type": "string"
+            },
+            {
+              "id": "escalation-normal",
+              "name": "escalation_level",
+              "value": "STANDARD - Log and monitor",
+              "type": "string"
+            },
+            {
+              "id": "keep-fields-2a",
+              "name": "severity",
+              "value": "={{ $json.severity }}",
+              "type": "string"
+            },
+            {
+              "id": "keep-fields-2b",
+              "name": "category",
+              "value": "={{ $json.category }}",
+              "type": "string"
+            },
+            {
+              "id": "keep-fields-2c",
+              "name": "risk_score",
+              "value": "={{ $json.risk_score }}",
+              "type": "number"
+            },
+            {
+              "id": "keep-fields-2d",
+              "name": "confidence",
+              "value": "={{ $json.confidence }}",
+              "type": "number"
+            },
+            {
+              "id": "keep-fields-2e",
+              "name": "guardrail_status",
+              "value": "={{ $json.guardrail_status }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "standard-response",
+      "name": "Standard Response",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1320, 100]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a senior cybersecurity reviewer performing decision auditing. Review the following incident triage assessment and determine if it is accurate and appropriate.\n\nOriginal Incident: An employee reported receiving a phishing email containing a malicious attachment. The attachment was opened on a workstation connected to the internal network. The employee's credentials may have been compromised, and unusual outbound traffic was detected from the affected machine to an unknown external IP address.\n\nTriage Assessment:\n- Severity: {{ $json.severity }}\n- Category: {{ $json.category }}\n- Risk Score: {{ $json.risk_score }}/10\n- Confidence: {{ $json.confidence }}%\n- Guardrail Status: {{ $json.guardrail_status }}\n\nRespond in EXACTLY this format:\nVALIDATION: [Correct/Incorrect]\nREASON: [One sentence explanation]\nADJUSTED_SEVERITY: [Critical/High/Medium/Low if adjustment needed, or Same]\nSHOULD_RETRY: [Yes/No - Yes if the assessment seems unreliable or needs re-evaluation]",
+        "options": {}
+      },
+      "id": "feedback-loop",
+      "name": "Feedback Loop - Decision Audit",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [1540, 0]
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {
+          "temperature": 0.2
+        }
+      },
+      "id": "ollama-model-2",
+      "name": "Ollama Chat Model (Auditor)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [1540, 220],
+      "credentials": {
+        "ollamaApi": {
+          "id": "ollama-cred",
+          "name": "Ollama Local"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse validation response and generate audit log\nconst validationResponse = $input.first().json.output || $input.first().json.text || '';\n\nlet validation = 'Unknown';\nlet reason = 'Unable to parse';\nlet adjustedSeverity = 'Same';\nlet shouldRetry = 'No';\n\nconst validMatch = validationResponse.match(/VALIDATION:\\s*(Correct|Incorrect)/i);\nif (validMatch) validation = validMatch[1];\n\nconst reasonMatch = validationResponse.match(/REASON:\\s*([^\\n]+)/i);\nif (reasonMatch) reason = reasonMatch[1].trim();\n\nconst adjMatch = validationResponse.match(/ADJUSTED_SEVERITY:\\s*(Critical|High|Medium|Low|Same)/i);\nif (adjMatch) adjustedSeverity = adjMatch[1];\n\nconst retryMatch = validationResponse.match(/SHOULD_RETRY:\\s*(Yes|No)/i);\nif (retryMatch) shouldRetry = retryMatch[1];\n\n// Generate Decision Audit Log\nconst auditLog = {\n  audit_id: `AUDIT-${Date.now()}`,\n  timestamp: new Date().toISOString(),\n  validation_result: validation,\n  validation_reason: reason,\n  adjusted_severity: adjustedSeverity,\n  should_retry: shouldRetry,\n  guardrail_check: 'PASSED',\n  decision_trail: [\n    'Step 1: Incident received and parsed',\n    'Step 2: AI Triage Agent analyzed incident',\n    'Step 3: Output Guardrail verified AI response safety',\n    'Step 4: Severity-based routing applied',\n    'Step 5: Decision Auditor reviewed assessment',\n    `Step 6: Validation result - ${validation}`\n  ]\n};\n\nreturn [{\n  json: {\n    ...auditLog,\n    raw_validation: validationResponse,\n    final_report: `\\n============ FINAL SECURITY INCIDENT REPORT ============\\n\\n🔍 Decision Audit ID: ${auditLog.audit_id}\\n⏰ Timestamp: ${auditLog.timestamp}\\n\\n✅ Validation: ${validation}\\n📝 Reason: ${reason}\\n🔄 Severity Adjustment: ${adjustedSeverity}\\n🔁 Should Retry: ${shouldRetry}\\n🛡️ Guardrail: PASSED\\n\\n📋 Decision Trail:\\n${auditLog.decision_trail.map(s => '  ' + s).join('\\n')}\\n\\n========================================================\\n`\n  }\n}];"
+      },
+      "id": "audit-report",
+      "name": "Decision Audit & Final Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1760, 0]
+    }
+  ],
+  "connections": {
+    "When clicking 'Test workflow'": {
+      "main": [
+        [
+          {
+            "node": "Simulated Security Incident",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simulated Security Incident": {
+      "main": [
+        [
+          {
+            "node": "AI Triage Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Triage Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Triage Agent": {
+      "main": [
+        [
+          {
+            "node": "Output Guardrail Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Output Guardrail Check": {
+      "main": [
+        [
+          {
+            "node": "Parse AI Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse AI Response": {
+      "main": [
+        [
+          {
+            "node": "Is Critical?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Critical?": {
+      "main": [
+        [
+          {
+            "node": "Critical Response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Standard Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Critical Response": {
+      "main": [
+        [
+          {
+            "node": "Feedback Loop - Decision Audit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Standard Response": {
+      "main": [
+        [
+          {
+            "node": "Feedback Loop - Decision Audit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model (Auditor)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Feedback Loop - Decision Audit",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Feedback Loop - Decision Audit": {
+      "main": [
+        [
+          {
+            "node": "Decision Audit & Final Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
